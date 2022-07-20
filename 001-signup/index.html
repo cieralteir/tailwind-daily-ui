@@ -18,25 +18,31 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="font-[Poppins]">
-    <main class="flex gap-10 h-screen">
-      <section class="flex basis-2/5 justify-center items-center">
-        <img src="./undraw_reminder.svg" />
+    <main class="flex gap-10 lg:h-screen">
+      <section class="hidden lg:flex basis-2/5 justify-center items-center">
+        <img src="./undraw_reminder.svg" class="max-h-[60%]" />
       </section>
-      <section class="flex flex-col basis-3/5 justify-between p-20">
-        <div class="self-end">
-          <button class="px-5 py-2 text-gray-400 hover:text-neutral-900">
+      <section
+        class="flex flex-col lg:basis-3/5 justify-between items-start gap-20 lg:gap-0 mx-auto px-10 lg:px-20 py-10"
+      >
+        <div class="lg:self-end">
+          <button class="py-2 mr-4 text-sm text-gray-400 hover:text-neutral-900">
             Already have an account?
           </button>
-          <button class="px-8 py-2 text-gray-400 hover:text-neutral-900 rounded-full border hover:border-neutral-900">
-            SIGN IN
+          <button
+            class="px-8 py-2 text-sm text-gray-400 hover:text-neutral-900 rounded-full border hover:border-neutral-900"
+          >
+            Sign In
           </button>
         </div>
         <div class="w-fit">
-          <h1 class="mb-2 font-bold text-5xl">Welcome to Memoir!</h1>
-          <p class="text-lg text-gray-400">Register your account</p>
+          <h1 class="mb-2 font-bold text-3xl lg:text-3xl">
+            Welcome to Memoir!
+          </h1>
+          <p class="text-gray-400">Register your account</p>
           <form class="mt-10">
             <div class="mb-6">
-              <label class="block mb-2 text-lg text-neutral-900" for="name">
+              <label class="block mb-2 text-neutral-900" for="name">
                 Name
               </label>
               <input
@@ -46,7 +52,7 @@
               />
             </div>
             <div class="mb-6">
-              <label class="block mb-2 text-lg text-neutral-900" for="email">
+              <label class="block mb-2 text-neutral-900" for="email">
                 Email
               </label>
               <input
@@ -55,8 +61,8 @@
                 type="email"
               />
             </div>
-            <div class="mb-16">
-              <label class="block mb-2 text-lg text-neutral-900" for="password">
+            <div class="mb-10">
+              <label class="block mb-2 text-neutral-900" for="password">
                 Password
               </label>
               <input
@@ -66,23 +72,31 @@
               />
             </div>
             <button
-              class="px-16 py-4 text-lg text-neutral-50 hover:text-neutral-900 bg-neutral-900 hover:bg-neutral-50 rounded-full :border"
+              class="w-full lg:w-fit px-16 py-4 text-neutral-50 hover:text-neutral-900 bg-neutral-900 hover:bg-neutral-50 rounded-full border border-neutral-900"
             >
-              Login
+              Register
             </button>
           </form>
         </div>
-        <div class="flex items-center gap-3">
-          <p class="text-lg text-gray-400">Create account with</p>
-          <button class="w-10 h-10 hover:text-neutral-50 hover:bg-neutral-900 rounded-full border hover:border-none">
-            <i class="fa-brands fa-facebook-f"></i>
-          </button>
-          <button class="w-10 h-10 hover:text-neutral-50 hover:bg-neutral-900 rounded-full border hover:border-none">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </button>
-          <button class="w-10 h-10 hover:text-neutral-50 hover:bg-neutral-900 rounded-full border hover:border-none">
-            <i class="fa-brands fa-google"></i>
-          </button>
+        <div class="flex flex-col lg:flex-row lg:items-center gap-3">
+          <p class="text-sm text-gray-400">Create account with</p>
+          <div class="flex gap-3">
+            <button
+              class="w-10 h-10 hover:text-neutral-50 hover:bg-neutral-900 rounded-full border hover:border-none"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </button>
+            <button
+              class="w-10 h-10 hover:text-neutral-50 hover:bg-neutral-900 rounded-full border hover:border-none"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </button>
+            <button
+              class="w-10 h-10 hover:text-neutral-50 hover:bg-neutral-900 rounded-full border hover:border-none"
+            >
+              <i class="fa-brands fa-google"></i>
+            </button>
+          </div>
         </div>
       </section>
     </main>
