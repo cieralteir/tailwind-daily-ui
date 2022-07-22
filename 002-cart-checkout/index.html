@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-[Poppins]">
+    <main class="container flex gap-10 w-full mx-auto p-10 py-20">
+      <section class="basis-3/5">
+        <h1 class="text-lg font-bold mb-3">SHOPPING CART</h1>
+        <div class="flex flex-col border-t py-3">
+          <div class="grid grid-cols-6 grid-rows-2 gap-5">
+            <div class="row-span-2">
+              <img
+                src="https://picsum.photos/200/300"
+                alt="cart-item"
+                class="object-cover h-full w-full"
+              />
+            </div>
+            <div>
+              <p class="text-lg font-bold">PLAIN SHIRT</p>
+              <div class="grid grid-cols-2">
+                <p class="font-bold">ID</p>
+                <p>#00001</p>
+                <p class="font-bold">Color</p>
+                <p>Black</p>
+                <p class="font-bold">Size</p>
+                <p>Medium</p>
+              </div>
+            </div>
+            <div></div>
+            <div>
+              <p>$500.00</p>
+            </div>
+            <div class="flex items-center justify-center gap-3 h-fit">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <div class="text-end">
+              <p class="font-bold">$500.00</p>
+            </div>
+            <div class="col-span-5 flex items-end justify-between">
+              <button
+                class="text-gray-400 hover:text-neutral-900 underline underline-offset-2"
+              >
+                Edit
+              </button>
+              <div>
+                <button
+                  class="mr-5 text-gray-400 hover:text-neutral-900 underline underline-offset-2"
+                >
+                  Remove
+                </button>
+                <button
+                  class="text-gray-400 hover:text-neutral-900 underline underline-offset-2"
+                >
+                  Move to wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="basis-2/5">
+        <h1 class="text-lg font-bold mb-3">ORDER SUMMARY</h1>
+        <div class="px-8 py-5 border">
+          <table class="w-full">
+            <tbody>
+              <tr>
+                <td class="py-1">SUBTOTAL</td>
+                <td class="text-end">$500.000</td>
+              </tr>
+              <tr>
+                <td class="py-1">SHIPPING</td>
+                <td class="text-end">TBD</td>
+              </tr>
+              <tr>
+                <td class="py-1 pb-2">ESTIMATED TAX</td>
+                <td class="text-end">$25.00</td>
+              </tr>
+              <tr class="border-t mt-5">
+                <td class="py-2 font-bold">TOTAL</td>
+                <td class="font-bold text-end">$525.000</td>
+              </tr>
+            </tbody>
+          </table>
+          <button
+            class="w-full mt-5 px-10 py-3 bg-gray-100 hover:bg-neutral-900 hover:text-white"
+          >
+            CHECKOUT
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
